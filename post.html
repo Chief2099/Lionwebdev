@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mighty Lions</title>
+    <link rel="stylesheet" href="css/customstyles.css">
+</head>
+<body>
+    <!-- Navigation section -->
+    <nav>
+        <a href="index.html">Resume</a>
+        <a href="contact.html">Game</a>
+    </nav>
+
+    <!-- Header section -->
+    <header>
+        <h1>All About Lions: The Kings of the Jungle</h1>
+    </header>
+
+    <!-- Content section -->
+    <div id="content">
+        <!-- Ordered list containing an unordered list -->
+        <ol>
+            <li>Facts About Lions
+                <ul>
+                    <li>They are social cats and live in groups called prides.</li>
+                    <li>Male lions can weigh up to 420 pounds!</li>
+                    <li>Their roar can be heard up to 5 miles away.</li>
+                </ul>
+            </li>
+            <li>Lion Documentary:</li>
+        </ol>
+
+        <!-- Embedded YouTube video -->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=OMkEVX23BdM" 
+                    title="Lions in the Wild" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- On-page anchor -->
+        <a href="#footer">Learn More About Lions in the Footer</a>
+
+        <!-- Lion image -->
+        <div class="image-container">
+            <img src="assets/img/Lion.jpg" alt="Majestic Lion">
+        </div>
+
+        <!-- Tableau graph -->
+        <div class="tableau-container">
+            <script src="https://public.tableau.com/javascripts/api/tableau-2.4.0.min.js"></script>
+            <div id="viz"></div>
+            <script>
+                var containerDiv = document.getElementById("viz");
+                var url = "https://public.tableau.com/views/TableauProj_17430594180180/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link";
+                var options = { width: "800px", height: "600px" };
+                var viz = new tableau.Viz(containerDiv, url, options);
+            </script>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer id="footer">
+        <p>Learn more about the world’s big cats <a href="https://en.wikipedia.org/wiki/Lion" target="_blank">here</a>.</p>
+    </footer>
+</body>
+</html>

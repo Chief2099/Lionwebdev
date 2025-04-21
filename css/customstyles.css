@@ -1,0 +1,135 @@
+/* ===== Global Styles ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f7f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+    color: #3e3e3e;
+  }
+  
+  /* ===== Navigation Bar ===== */
+  nav {
+    background-color: #5c4033;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px 0;
+  }
+  
+  nav a {
+    color: #f5d6a1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #8b5e3c;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  nav a:hover {
+    background-color: #a46e4a;
+    transform: translateY(-2px);
+  }
+  
+  /* ===== Main Content Section ===== */
+  #content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  ol li {
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+  
+  a[href^="#"] {
+    display: inline-block;
+    margin-top: 20px;
+    color: #5c4033;
+    text-decoration: underline;
+  }
+  
+  a[href^="#"]:hover {
+    color: #a46e4a;
+  }
+  
+  /* ===== Video Styling ===== */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+    margin: 30px 0;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* ===== Image Styling ===== */
+  .image-container {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* ===== Tableau Graph ===== */
+  .tableau-container {
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  #viz {
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* ===== Footer ===== */
+  footer {
+    background-color: #5c4033;
+    color: #f5d6a1;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+  }
+  
+  footer a {
+    color: #ffdfab;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
